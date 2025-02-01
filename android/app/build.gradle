@@ -7,8 +7,7 @@ plugins {
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file("local.properties")
 if (localPropertiesFile.exists()) {
-    localPropertiesFile.withReader("UTF-8") { reader ->
-        localProperties.load(reader)
+    localPropertiesFile.withReader("UTF-8") { reader -> localProperties.load(reader)
     }
 }
 
@@ -52,7 +51,6 @@ android {
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
     }
-
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
