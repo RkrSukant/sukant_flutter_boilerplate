@@ -1,0 +1,19 @@
+import 'package:auto_route/annotations.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+@RoutePage()
+class ExampleScreen extends ConsumerStatefulWidget {
+  const ExampleScreen({super.key});
+
+  @override
+  ConsumerState createState() => _ExampleScreenState();
+}
+
+class _ExampleScreenState extends ConsumerState<ExampleScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return const Center(child: Text("Hello World!")
+      ,);
+  }
+}
