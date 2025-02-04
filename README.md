@@ -1,16 +1,26 @@
-# sukant_flutter_boilerplate
+# Sukant's Boilerplate for a new flutter application.
+A boilerplate for a new flutter project. With implementation for all necessary for a basic project.
 
-Sukant's boilerplate for a new flutter project
+## Dependencies:
+- dio
+- flutter_riverpod
+- shared_preferences
+- json_annotation
+- sqflite
+- floor
+- auto_route
+- fluttertoast
+- pull_to_refresh
+- geolocator
+- path
+- get_it
+- flutter_secure_storage
+- equatable
+- flutter_easyloading
+- image_picker
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Dev Dependencies
+- json_serializable
+- build_runner
+- floor-generator
+- auto-route-generator
