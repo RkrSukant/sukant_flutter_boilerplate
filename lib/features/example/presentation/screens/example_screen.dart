@@ -1,5 +1,6 @@
 import 'package:auto_route/annotations.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 @RoutePage()
@@ -13,7 +14,8 @@ class ExampleScreen extends ConsumerStatefulWidget {
 class _ExampleScreenState extends ConsumerState<ExampleScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Center(child: Text("Hello World!")
-      ,);
+    return const Scaffold(
+      body: Center(child: Text("Hello World!")),
+    );
   }
 }

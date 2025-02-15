@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:intl/intl.dart';
 import 'package:sukant_flutter_boilerplate/shared/enums/toast_type.dart';
 import 'package:sukant_flutter_boilerplate/shared/helpers/colors.dart';
 import 'package:sukant_flutter_boilerplate/shared/helpers/dimens.dart';
@@ -38,7 +39,7 @@ extension ContextExtensions on BuildContext {
     var fToast = FToast();
     fToast.init(this);
     return fToast.showToast(
-        gravity: ToastGravity.TOP,
+        gravity: ToastGravity.BOTTOM,
         child: Container(
           margin: const EdgeInsets.only(bottom: Dimens.spacing_0),
           height: Dimens.spacing_40,
@@ -95,4 +96,8 @@ Future<String> takePicture() async {
   } on Exception {
     return '';
   }
+}
+
+String getCurrentDate() {
+  return DateFormat('yyyy-MM-dd').format(DateTime.now());
 }
