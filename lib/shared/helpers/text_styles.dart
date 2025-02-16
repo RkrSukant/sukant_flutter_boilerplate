@@ -11,3 +11,8 @@ const TextStyle text_1F2024_12_w700 = TextStyle(
     color: AppColors.black_rgba_1F2024,
     fontWeight: FontWeight.w700,
     fontSize: Dimens.textSize_12);
+
+const TextStyle text_black_16_w600 = TextStyle(
+    color: AppColors.black_rgba_1F2024,
+    fontWeight: FontWeight.w600,
+    fontSize: Dimens.textSize_16);
