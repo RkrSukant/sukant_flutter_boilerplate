@@ -25,5 +25,9 @@ class AppRouter extends $AppRouter{
       path: Paths.exampleScreen,
       page: ExampleRoute.page,
     ),
+    AutoRoute(
+      path: Paths.loginScreen,
+      page: LoginRoute.page,
+    ),
   ];
 }

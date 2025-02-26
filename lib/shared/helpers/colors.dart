@@ -16,6 +16,13 @@ class AppColors{
   static const black_rgba_1F2024 = Color.fromRGBO(31, 32, 36, 1);
   static const black_rgba_8F9098 = Color.fromRGBO(143, 144, 152, 1);
   static const grey_rgba_E8E9F1 = Color.fromRGBO(232, 233, 241, 1.0);
+  static const black_rgba_C5C6CC = Color.fromRGBO(197, 198, 204, 1);
+  static const white_rgba_FFFFFF = Color.fromRGBO(255, 255, 255, 1.0);
+
+  static const red_ED3241 = Color(0xFFED3241);
+  static const blue_006FFD = Color(0xFF006FFD);
+
+
 
   const AppColors();
 }

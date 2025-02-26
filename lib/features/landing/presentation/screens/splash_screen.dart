@@ -41,6 +41,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
           padding: const EdgeInsets.all(Dimens.spacing_16),
           child: Column(
             mainAxisSize: MainAxisSize.max,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               addVerticalSpace(Dimens.spacing_40),
               const Icon(
@@ -70,7 +71,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
   }
 
   Future<void> navigate() async {
-    context.replaceRouteTo(Paths.exampleScreen);
+    context.replaceRouteTo(Paths.loginScreen);
   }
 
   Future<bool> checkInternetConnection() async {

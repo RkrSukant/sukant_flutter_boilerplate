@@ -3,4 +3,6 @@ class Paths{
 
   //example
   static const String exampleScreen = "/example";
+
+  static const String loginScreen = "/login";
 }
