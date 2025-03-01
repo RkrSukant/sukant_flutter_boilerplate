@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:sukant_flutter_boilerplate/shared/helpers/colors.dart';
 import 'package:sukant_flutter_boilerplate/shared/helpers/dimens.dart';
 import 'package:sukant_flutter_boilerplate/shared/helpers/text_styles.dart';
 

@@ -35,7 +35,7 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      style: text_1F2024_14_regular_w400,
+      style: text_1F2024_14_w400,
       keyboardType: inputType,
       controller: textController,
       enabled: isEnabled,
@@ -50,26 +50,26 @@ class CustomTextField extends StatelessWidget {
               errorStyle: const TextStyle(fontSize: 0),
               border: OutlineInputBorder(
                 borderSide:
-                    const BorderSide(color: AppColors.black_rgba_C5C6CC),
-                borderRadius: BorderRadius.circular(Dimens.spacing_12),
+                    const BorderSide(color: AppColors.blackC5C6CC),
+                borderRadius: BorderRadius.circular(Dimens.spacing_120),
               ),
               contentPadding: const EdgeInsets.symmetric(
                   vertical: Dimens.spacing_12, horizontal: Dimens.spacing_16),
               filled: true,
               hintText: hintText,
-              fillColor: AppColors.white_rgba_FFFFFF,
+              fillColor: const AppColors().whiteFFFFFF,
               enabledBorder: OutlineInputBorder(
                 borderSide:
-                    const BorderSide(color: AppColors.black_rgba_C5C6CC),
-                borderRadius: BorderRadius.circular(Dimens.spacing_12),
+                    const BorderSide(color: AppColors.blackC5C6CC),
+                borderRadius: BorderRadius.circular(Dimens.spacing_120),
               ),
               errorBorder: OutlineInputBorder(
-                borderSide: const BorderSide(color: AppColors.red_ED3241),
-                borderRadius: BorderRadius.circular(Dimens.spacing_12),
+                borderSide: const BorderSide(color: AppColors.redED3241),
+                borderRadius: BorderRadius.circular(Dimens.spacing_120),
               ),
               focusedBorder: OutlineInputBorder(
-                  borderSide: const BorderSide(color: AppColors.blue_006FFD),
-                  borderRadius: BorderRadius.circular(Dimens.spacing_12)),
+                  borderSide: const BorderSide(color: AppColors.blue006FFD),
+                  borderRadius: BorderRadius.circular(Dimens.spacing_120)),
             ),
     );
   }

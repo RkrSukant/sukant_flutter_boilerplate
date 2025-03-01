@@ -16,7 +16,7 @@ Widget addHorizontalSpace(double width) {
   return SizedBox(width: width);
 }
 
-Widget addDivider({Color color = AppColors.grey_rgba_E8E9F1}) {
+Widget addDivider({Color color = AppColors.greyE8E9F1}) {
   return Divider(
     height: 0,
     thickness: 1,
@@ -26,15 +26,15 @@ Widget addDivider({Color color = AppColors.grey_rgba_E8E9F1}) {
 
 extension ContextExtensions on BuildContext {
   void showToast(String title, ToastType type) {
-    Color activeColor = AppColors.black_rgba_1F2024;
+    Color activeColor = AppColors.black1F2024;
     if (type == ToastType.success) {
-      activeColor = AppColors.green_rgba_0CCB6B;
+      activeColor = AppColors.green0CCB6B;
     } else if (type == ToastType.info) {
-      activeColor = AppColors.blue_rgba_006FFD;
+      activeColor = AppColors.blue006FFD;
     } else if (type == ToastType.warning) {
-      activeColor = AppColors.orange_rgba_FF962E;
+      activeColor = AppColors.orangeFF962E;
     } else {
-      activeColor = AppColors.red_rgba_C51523;
+      activeColor = AppColors.redC51523;
     }
     var fToast = FToast();
     fToast.init(this);

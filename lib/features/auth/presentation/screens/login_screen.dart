@@ -17,8 +17,8 @@ class LoginScreen extends ConsumerStatefulWidget {
 }
 
 class _LoginScreenState extends ConsumerState<LoginScreen> {
-  TextEditingController _emailController = TextEditingController();
-  TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -31,22 +31,34 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Image.asset(ImageConstants.icAppIcon),
+            Image.asset(
+              ImageConstants.icAppIcon,
+              height: Dimens.spacing_120,
+              width: Dimens.spacing_120,
+            ),
             addVerticalSpace(Dimens.spacing_16),
             const Text(
               Strings.login,
-              style: text_1F2024_12_w700,
+              style: text_1F2024_32_w900,
             ),
             addVerticalSpace(Dimens.spacing_8),
-            const Text(Strings.loginMsg),
+            const Text(
+              Strings.loginMsg,
+              style: text_8F9098_14_w500,
+            ),
             addVerticalSpace(Dimens.spacing_16),
-            const Text(Strings.email),
+            const Text(
+              Strings.email,
+              style: text_1F2024_16_w600,
+            ),
             addVerticalSpace(Dimens.spacing_8),
             CustomTextField(
-                textController: _emailController,
-                hintText: Strings.enterEmail),
+                textController: _emailController, hintText: Strings.enterEmail),
             addVerticalSpace(Dimens.spacing_16),
-            const Text(Strings.password),
+            const Text(
+              Strings.password,
+              style: text_1F2024_16_w600,
+            ),
             addVerticalSpace(Dimens.spacing_8),
             CustomTextField(
               textController: _passwordController,
@@ -54,7 +66,20 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               obscureText: true,
             ),
             addVerticalSpace(Dimens.spacing_16),
-            const Text(Strings.forgotPassword),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                InkWell(
+                    onTap: () {},
+                    child: Padding(
+                      padding: const EdgeInsets.all(Dimens.spacing_4),
+                      child: const Text(
+                        Strings.forgotPassword,
+                        style: text_8F9098_12_w700,
+                      ),
+                    )),
+              ],
+            ),
             addVerticalSpace(Dimens.spacing_16),
             //todo button
             addVerticalSpace(Dimens.spacing_36),
@@ -67,9 +92,12 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 const Text(Strings.dontHaveAnAccount),
-                GestureDetector(
-                  onTap: () {},
-                  child: const Text(Strings.register),
+                InkWell(
+                  onTap:(){},
+                  child: const Padding(
+                    padding: EdgeInsets.all(Dimens.spacing_4),
+                    child: Text(Strings.register, style: text_006FFD_14_w600,),
+                  ),
                 ),
               ],
             ),

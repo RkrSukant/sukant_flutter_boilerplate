@@ -1,4 +1,6 @@
 
+import 'package:flutter/cupertino.dart';
+
 extension Iterables<E> on Iterable<E> {
   Map<K, List<E>> groupBy<K>(K Function(E) keyFunction) => fold(
       <K, List<E>>{},
@@ -20,9 +22,9 @@ extension PrintStackTrace on Object {
   void printStackTrace() {
     if (this is Error) {
       final error = this as Error;
-      print(error.stackTrace);
+      debugPrint(error.stackTrace.toString());
     } else {
-      print('No stack trace available for this object.');
+      debugPrint('No stack trace available for this object.');
     }
   }
 }

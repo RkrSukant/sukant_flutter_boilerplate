@@ -8,17 +8,17 @@ class AppTheme {
 
   static ThemeData define() {
     return ThemeData(
-      fontFamily: 'Inter',
+      fontFamily: 'Poppins',
       primaryColor: colors.backGroundColor,
       scaffoldBackgroundColor: colors.backGroundColor,
       visualDensity: VisualDensity.adaptivePlatformDensity,
       colorScheme: ColorScheme.fromSwatch().copyWith(
         secondary: colors.secondaryColor,
-        surface: colors.white_ffffff,
-        surfaceTint: colors.white_ffffff,
+        surface: colors.whiteFFFFFF,
+        surfaceTint: colors.whiteFFFFFF,
       ),
       dividerTheme: const DividerThemeData(
-        color: AppColors.grey_rgba_E8E9F1,
+        color: AppColors.greyE8E9F1,
       ),
     );
   }
