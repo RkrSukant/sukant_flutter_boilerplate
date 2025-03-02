@@ -35,7 +35,7 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      style: text_1F2024_14_w400,
+      style: text1F2024s14w400,
       keyboardType: inputType,
       controller: textController,
       enabled: isEnabled,

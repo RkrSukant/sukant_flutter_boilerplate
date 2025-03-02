@@ -39,17 +39,17 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
             addVerticalSpace(Dimens.spacing_16),
             const Text(
               Strings.login,
-              style: text_1F2024_32_w900,
+              style: text1F2024s32w900,
             ),
             addVerticalSpace(Dimens.spacing_8),
             const Text(
               Strings.loginMsg,
-              style: text_8F9098_14_w500,
+              style: text8F9098s14w500,
             ),
             addVerticalSpace(Dimens.spacing_16),
             const Text(
               Strings.email,
-              style: text_1F2024_16_w600,
+              style: text1F2024s16w600,
             ),
             addVerticalSpace(Dimens.spacing_8),
             CustomTextField(
@@ -57,7 +57,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
             addVerticalSpace(Dimens.spacing_16),
             const Text(
               Strings.password,
-              style: text_1F2024_16_w600,
+              style: text1F2024s16w600,
             ),
             addVerticalSpace(Dimens.spacing_8),
             CustomTextField(
@@ -71,11 +71,11 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               children: [
                 InkWell(
                     onTap: () {},
-                    child: Padding(
-                      padding: const EdgeInsets.all(Dimens.spacing_4),
-                      child: const Text(
+                    child: const Padding(
+                      padding: EdgeInsets.all(Dimens.spacing_4),
+                      child: Text(
                         Strings.forgotPassword,
-                        style: text_8F9098_12_w700,
+                        style: text8F9098s12w700,
                       ),
                     )),
               ],
@@ -96,7 +96,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                   onTap:(){},
                   child: const Padding(
                     padding: EdgeInsets.all(Dimens.spacing_4),
-                    child: Text(Strings.register, style: text_006FFD_14_w600,),
+                    child: Text(Strings.register, style: text006FFDs14w600,),
                   ),
                 ),
               ],

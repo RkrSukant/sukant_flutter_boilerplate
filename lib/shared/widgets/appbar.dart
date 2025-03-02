@@ -46,7 +46,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
       ),
       title: Text(
         widget.title ?? "",
-        style: text_black_16_w600,
+        style: text1F2024s16w600,
       ),
       actions: widget.actions,
     );

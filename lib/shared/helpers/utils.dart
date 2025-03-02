@@ -64,7 +64,7 @@ extension ContextExtensions on BuildContext {
                 Flexible(
                   child: Text(
                     title,
-                    style: text_1F2024_12_w700,
+                    style: text1F2024s12w700,
                     textAlign: TextAlign.center,
                   ),
                 ),
