@@ -17,10 +17,12 @@ Widget addHorizontalSpace(double width) {
 }
 
 Widget addDivider({Color color = AppColors.greyE8E9F1}) {
-  return Divider(
-    height: 0,
-    thickness: 1,
-    color: color,
+  return Expanded(
+    child: Divider(
+      height: 0,
+      thickness: 1,
+      color: color,
+    ),
   );
 }
 

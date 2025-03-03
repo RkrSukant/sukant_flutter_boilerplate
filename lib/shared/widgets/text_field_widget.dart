@@ -12,6 +12,8 @@ class CustomTextField extends StatelessWidget {
   final bool obscureText;
   final bool isEnabled;
   final bool isReadOnly;
+  final bool isPassword;
+  final double borderRadius;
   final Function(String)? onChanged;
   final Function()? onTap;
   final List<TextInputFormatter>? inputFormatters;
@@ -26,6 +28,8 @@ class CustomTextField extends StatelessWidget {
     this.obscureText = false,
     this.isEnabled = true,
     this.isReadOnly = false,
+    this.isPassword = false,
+    this.borderRadius = Dimens.spacing_14,
     this.decoration,
     this.onChanged,
     this.onTap,
@@ -35,11 +39,12 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      style: text1F2024s14w400,
+      style: text1F2024s16w400,
       keyboardType: inputType,
       controller: textController,
       enabled: isEnabled,
       readOnly: isReadOnly,
+      obscureText: isPassword,
       inputFormatters: inputFormatters ?? [],
       onChanged: (onChanged != null) ? onChanged : (value) {},
       onTap: (onTap != null) ? onTap : () {},
@@ -48,28 +53,28 @@ class CustomTextField extends StatelessWidget {
           : InputDecoration(
               errorText: hasError ? "" : null,
               errorStyle: const TextStyle(fontSize: 0),
-              border: OutlineInputBorder(
-                borderSide:
-                    const BorderSide(color: AppColors.blackC5C6CC),
-                borderRadius: BorderRadius.circular(Dimens.spacing_120),
-              ),
               contentPadding: const EdgeInsets.symmetric(
-                  vertical: Dimens.spacing_12, horizontal: Dimens.spacing_16),
+                  vertical: Dimens.spacing_18, horizontal: Dimens.spacing_24),
               filled: true,
               hintText: hintText,
-              fillColor: const AppColors().whiteFFFFFF,
+              hintStyle: text7C8BA0s16w400,
+              fillColor: const AppColors().whiteRgbaFFFFFF,
+              hoverColor: const AppColors().whiteRgbaFFFFFF,
+              border: OutlineInputBorder(
+                borderSide: const BorderSide(color: AppColors.blackC5C6CC),
+                borderRadius: BorderRadius.circular(borderRadius),
+              ),
               enabledBorder: OutlineInputBorder(
-                borderSide:
-                    const BorderSide(color: AppColors.blackC5C6CC),
-                borderRadius: BorderRadius.circular(Dimens.spacing_120),
+                borderSide: const BorderSide(color: AppColors.blackC5C6CC),
+                borderRadius: BorderRadius.circular(borderRadius),
               ),
               errorBorder: OutlineInputBorder(
                 borderSide: const BorderSide(color: AppColors.redED3241),
-                borderRadius: BorderRadius.circular(Dimens.spacing_120),
+                borderRadius: BorderRadius.circular(borderRadius),
               ),
               focusedBorder: OutlineInputBorder(
                   borderSide: const BorderSide(color: AppColors.blue006FFD),
-                  borderRadius: BorderRadius.circular(Dimens.spacing_120)),
+                  borderRadius: BorderRadius.circular(borderRadius)),
             ),
     );
   }

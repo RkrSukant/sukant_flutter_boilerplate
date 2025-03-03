@@ -14,8 +14,8 @@ class AppTheme {
       visualDensity: VisualDensity.adaptivePlatformDensity,
       colorScheme: ColorScheme.fromSwatch().copyWith(
         secondary: colors.secondaryColor,
-        surface: colors.whiteFFFFFF,
-        surfaceTint: colors.whiteFFFFFF,
+        surface: colors.whiteRgbaFFFFFF,
+        surfaceTint: colors.whiteRgbaFFFFFF,
       ),
       dividerTheme: const DividerThemeData(
         color: AppColors.greyE8E9F1,

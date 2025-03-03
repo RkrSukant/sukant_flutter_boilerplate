@@ -6,7 +6,8 @@ class Strings {
       'Slow or no internet connection. Please check your internet settings.';
   static const String somethingWentWrong = 'Something went wrong!';
 
-  static const String login = 'Login';
+  static const String signIn = 'Sign In';
+  static const String login = 'Log In';
   static const String register = 'Register';
   static const String loginMsg = 'Login to continue using the app';
   static const String email = 'Email';
