@@ -7,9 +7,13 @@ class Strings {
   static const String somethingWentWrong = 'Something went wrong!';
 
   static const String signIn = 'Sign In';
+  static const String signUp = 'Sign Up';
   static const String login = 'Log In';
   static const String register = 'Register';
+  static const String createAccount = 'Create account';
+  static const String registerMsg = 'Sign up to get started and unlock all the features of the app!';
   static const String loginMsg = 'Login to continue using the app';
+  static const String name = 'Name';
   static const String email = 'Email';
   static const String enterEmail = 'Enter your email';
   static const String password = 'Password';
@@ -17,6 +21,7 @@ class Strings {
   static const String forgotPassword = 'Forgot Password?';
   static const String orLoginWith = 'Or Login with';
   static const String dontHaveAnAccount = 'Don\'t have an account?';
+  static const String alreadyHaveAnAccount = 'Already have an account?';
   static const String enterPersonalInformation =
       'Enter your Personal Information';
   static const String username = 'Username';
@@ -37,4 +42,5 @@ class Strings {
   static const String newPassword = 'New Password';
   static const String enterNewPassword = 'Enter new password';
   static const String resetPassword = 'Reset Password';
+  static const String iAgreeWithTerms = 'I agree with the Terms & Conditions';
 }
